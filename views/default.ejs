@@ -1,0 +1,64 @@
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+    <title><%= title %> - 网银在线技术团队</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" href="/css/m.css">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" href="/css/m.css">
+    <link rel="stylesheet" media="screen and (min-width:1025px)" href="/css/base.css">
+    <link rel="stylesheet" href="/css/highlight/github.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3620643001" type="text/javascript" charset="utf-8"></script>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script><![endif]-->
+</head>
+<body class="pg-archives">
+    <header id="hdw" role="banner">
+        <div id="hd" class="cf">
+            <a href="/index" class="logo">
+                <img src="/images/logo.png">
+            </a>
+            <nav class="site-nav cf">
+                <a href="/index" id="index">首页</a>
+                <a href="/archives" id="archives">文章归档</a>
+                <a href="/about" id="about">关于我们</a>
+            </nav>
+            <form action="/search" method="post" class="search">
+                <input type="hidden" name="keywords" >
+                <input type="hidden" id="htype" value="<%=type %>">
+                <input type="text" name="q" placeholder="Search" class="search__input">
+            </form>
+            <a href="https://github.com/cncduLee" class="rss"></a>
+        </div>
+        <!-- <a id="github-link" href="http://github.com/cncduLee/">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" 
+            src="/img/forkme_right_red.png" alt="Fork me on GitHub">
+        </a> -->
+    </header>
+
+    <%-body %>
+
+<footer id="ftw">
+    <div id="ft">© 2014<span id="copyright">网银在线技术团队</span>All rights reserved.
+        |<a href="/post">发布文章</a>
+    </div>
+</footer>
+
+</body>
+
+<script type='text/javascript'>
+    var htype = $("#htype").val();
+    if(1 == htype){
+        $('#index').addClass('current');    
+    }
+    if(2 == htype){ 
+        $('#archives').addClass('current');    
+    }
+    if(3 == htype){
+        $('#about').addClass('current');    
+    }    
+</script>
+</html>
