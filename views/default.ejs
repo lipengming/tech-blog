@@ -27,11 +27,10 @@
                 <a href="/about" id="about">关于我们</a>
             </nav>
             <form action="/search" method="post" class="search">
-                <input type="hidden" name="keywords" >
                 <input type="hidden" id="htype" value="<%=type %>">
-                <input type="text" name="q" placeholder="Search" class="search__input">
+                <input type="text" name="keywords" placeholder="Search" class="search__input">
             </form>
-            <a href="https://github.com/cncduLee" class="rss"></a>
+            <a href="https://github.com/cncduLee/tech-blog" class="rss"></a>
         </div>
         <!-- <a id="github-link" href="http://github.com/cncduLee/">
             <img style="position: absolute; top: 0; right: 0; border: 0;" 
@@ -43,8 +42,13 @@
 
 <footer id="ftw">
     <div id="ft">© 2014<span id="copyright">网银在线技术团队</span>All rights reserved.
-        |<a href="/post">发布文章</a>
-    </div>
+        |<a href="/post">发布文章
+        <% if(user){ %>
+            |<a href="/logout">登出</a>
+        <%} else{%>
+            |<a href="/login">登录</a>
+        <%}%>
+            </div>
 </footer>
 
 </body>

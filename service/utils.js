@@ -1,4 +1,5 @@
 var xss = require('xss');
+var crypto = require('crypto');
 
 exports.format_date = function (date, friendly) {
   var year = date.getFullYear();
@@ -108,4 +109,16 @@ exports.toArr = function (str,splitor) {
     return str.split(",");  
   }
   return str.split(",");
+};
+
+/**
+ * text md5加密
+ *
+ * @param {string} text 明文
+ * @return {string} md5密文
+ */
+exports.md5 = function(text) {
+  var md5 = crypto.createHash('md5');
+  md5.update(text);
+  return md5.digest('hex');
 }

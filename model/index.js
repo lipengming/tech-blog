@@ -11,6 +11,10 @@ mongoose.connect(config.db, function (err) {
 // models
 require('./Article');
 require('./Tag');
+require('./User');
+
 
 exports.Article = mongoose.model('Article');
 exports.Tag = mongoose.model('Tag');
+exports.User = mongoose.model('User');
+
