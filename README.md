@@ -9,10 +9,10 @@ http://wangyin.herokuapp.com/
 
 TODO LIST
 ====
-  -style change
-  -user profiler add
-  -logout button
-  -Beautify
+  -style change 
+  -user profiler add  
+  -logout button  
+  -Beautify 
 
 
 
