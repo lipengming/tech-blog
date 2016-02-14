@@ -2,7 +2,7 @@
 tech-blog with node,mongodb
 
 ## target:
-http://wangyin.herokuapp.com/
+www.cubbery.com
 
 
 ## TODO LIST
