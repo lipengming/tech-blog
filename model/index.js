@@ -5,7 +5,8 @@ mongoose.connect(config.db,
   {
     useNewUrlParser: true,
     useFindAndModify: false,
-    useUnifiedTopology: true
+    retryWrites: true,
+    w: "majority",
   },
  function (err) {
   if (err) {
