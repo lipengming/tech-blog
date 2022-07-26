@@ -5,7 +5,7 @@ module.exports = {
 	version:'0.0.1',
 	session_secret:'session.wangyin.com',
 	auth_cookie: 'cookies.wangyin.com',
-	db:'mongodb://127.0.0.1/cubber',//mongodb://baimo:baimo@ds061200.mongolab.com:61200/cubber
+	db:'mongodb://baimo:baimo@ds061200.mongolab.com:61200/cubber',//mongodb://baimo:baimo@ds061200.mongolab.com:61200/cubber //mongodb://127.0.0.1/cubber
 	host:'localhost',
 	page_size:10,
 	rss:{
